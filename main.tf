@@ -3,7 +3,7 @@
 #
 
 locals {
-  l = lower(var.value)
+  l = "${lower(var.value)}"
 
   value = "${
     local.l == "true" ||
