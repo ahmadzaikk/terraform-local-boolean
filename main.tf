@@ -5,7 +5,7 @@
 locals {
   l = lower(var.value)
 
-  value = "{
+  value = "${
     local.l == "true" ||
     local.l == "t" ||
     local.l == "1" ||
